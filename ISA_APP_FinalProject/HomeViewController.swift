@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    
+    //dummy
     var listArray1 = ["Profile", "Notifications", "Chapel", "Events", "Pictures", "Settings"]
     
     
