@@ -17,6 +17,7 @@
 		EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */; };
 		EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */; };
 		EE6A6E44255D0F4C006526F9 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */; };
+		EE6A6E4B255D4595006526F9 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterViewController.swift; sourceTree = "<group>"; };
 		EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				EE6A6E27255CF6A4006526F9 /* LaunchScreen.storyboard */,
 				EE6A6E2A255CF6A4006526F9 /* Info.plist */,
 				EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */,
+				EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */,
 			);
 			path = ISA_APP_FinalProject;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE6A6E4B255D4595006526F9 /* EmailTableViewController.swift in Sources */,
 				EE6A6E1D255CF6A3006526F9 /* AppDelegate.swift in Sources */,
 				EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */,
 				EE6A6E1F255CF6A3006526F9 /* SceneDelegate.swift in Sources */,

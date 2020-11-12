@@ -30,7 +30,6 @@ class ListTableViewController: UITableViewController {
 
         // use the values in the array to make cast list cell pretty
         cell.textLabel?.text = listArray[indexPath.row]
-        //cell.detailTextLabel?.text = castListArray?[indexPath.row].role
 
         return cell
     }
