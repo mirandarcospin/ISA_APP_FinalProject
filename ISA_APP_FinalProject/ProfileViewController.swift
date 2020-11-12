@@ -6,14 +6,35 @@
 //
 
 import UIKit
+import Foundation
 
 class ProfileViewController: UIViewController {
+
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var tapToChangeProfileButton: UIButton!
+    
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        profileImageView.isUserInteractionEnabled = true
+        profileImageView.addGestureRecognizer(imageTap)
+        profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
+        profileImageView.clipsToBounds = true
+        tapToChangeProfileButton.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+//        imagePicker.delegate = self
     }
+    
+    @objc func openImagePicker(_ sender:Any){
+        //open image picker
+    }
+    
     
 
     /*
