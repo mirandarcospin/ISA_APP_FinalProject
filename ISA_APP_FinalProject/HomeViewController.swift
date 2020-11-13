@@ -9,13 +9,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var detailItem : Information? {
+        didSet{
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+ 
     }
-    //dummy
-    var listArray1 = ["Profile", "Notifications", "Chapel", "Events", "Pictures", "Settings"]
-    
+
     
     // MARK: - Navigation
 
@@ -23,9 +27,12 @@ class HomeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
         if segue.identifier == "showList" {
             let controller = segue.destination as! ListTableViewController
-                controller.listArray = listArray1
+            if let listArrayList = detailItem?.settingsView {
+                controller.listArray = listArrayList
+            }
         }
     }
     

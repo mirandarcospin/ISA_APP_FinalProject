@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5677E4255E35D400495F0D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5677E3255E35D400495F0D /* DataController.swift */; };
+		EE5677E7255E361400495F0D /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5677E6255E361400495F0D /* InfoData.swift */; };
 		EE6A6E1D255CF6A3006526F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E1C255CF6A3006526F9 /* AppDelegate.swift */; };
 		EE6A6E1F255CF6A3006526F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E1E255CF6A3006526F9 /* SceneDelegate.swift */; };
 		EE6A6E24255CF6A3006526F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6A6E22255CF6A3006526F9 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE5677E3255E35D400495F0D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		EE5677E6255E361400495F0D /* InfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
 		EE6A6E19255CF6A3006526F9 /* ISA_APP_FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISA_APP_FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6A6E1C255CF6A3006526F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE6A6E1E255CF6A3006526F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				EE6A6E2A255CF6A4006526F9 /* Info.plist */,
 				EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */,
 				EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */,
+				EE5677E3255E35D400495F0D /* DataController.swift */,
+				EE5677E6255E361400495F0D /* InfoData.swift */,
 			);
 			path = ISA_APP_FinalProject;
 			sourceTree = "<group>";
@@ -156,10 +162,12 @@
 				EE6A6E1D255CF6A3006526F9 /* AppDelegate.swift in Sources */,
 				EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */,
 				EE6A6E1F255CF6A3006526F9 /* SceneDelegate.swift in Sources */,
+				EE5677E4255E35D400495F0D /* DataController.swift in Sources */,
 				EE6A6E3A255CFC75006526F9 /* ProfileViewController.swift in Sources */,
 				EE6A6E36255CFBBF006526F9 /* HomeViewController.swift in Sources */,
 				EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */,
 				EE6A6E44255D0F4C006526F9 /* ListTableViewController.swift in Sources */,
+				EE5677E7255E361400495F0D /* InfoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
