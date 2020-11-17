@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
         
         if segue.identifier == "showList" {
             let controller = segue.destination as! ListTableViewController
-            if let listArrayList = detailItem?.settingsView {
+            if let listArrayList = detailItem?.nameView {
                 controller.listArray = listArrayList
             }
         }
