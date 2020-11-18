@@ -12,18 +12,19 @@ class InfoData: Codable {
 }
 
 class Information: Codable {
-    let yearStart: Int
-    let yearEnd: Int
-    let nameView: [NameView]
-}
-
-class NameView: Codable {
+    let nameView: String
     let views: [Views]
 }
 
 class Views: Codable {
+    let viewInfoYears: [InfoYears]
     let viewInfoSettings: [InfoSettings]
     let viewInfoContacts: [InfoContacts]
+}
+
+class InfoYears: Codable {
+    let yearStart: Int
+    let yearEnd: Int
 }
 
 class InfoSettings: Codable {
@@ -41,9 +42,9 @@ class InfoContacts: Codable {
 }
 
 class Positions: Codable {
-    let officername: String?
-    let role: String?
-    let personEmail: String?
+    let officername: String
+    let role: String
+    let personEmail: String
     let officerPic: String?
     let aboutOfficer: String?
     let isaEmail: String?

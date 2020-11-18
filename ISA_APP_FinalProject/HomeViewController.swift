@@ -9,11 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var detailItem : Information? {
-        didSet{
-            
-        }
-    }
+    var detailItem : Views?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +26,7 @@ class HomeViewController: UIViewController {
         
         if segue.identifier == "showList" {
             let controller = segue.destination as! ListTableViewController
-            if let listArrayList = detailItem?.nameView {
+            if let listArrayList = detailItem?.viewInfoSettings {
                 controller.listArray = listArrayList
             }
         }

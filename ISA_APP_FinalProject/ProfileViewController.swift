@@ -12,7 +12,7 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var tapToChangeProfileButton: UIButton!
-    
+
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class ProfileViewController: UIViewController {
         profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
         profileImageView.clipsToBounds = true
         tapToChangeProfileButton.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
-        
+
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary

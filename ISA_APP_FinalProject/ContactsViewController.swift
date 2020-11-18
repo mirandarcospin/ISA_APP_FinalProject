@@ -16,7 +16,7 @@ class ContactsViewController: UIViewController {
     @IBOutlet var aboutLabel: UITextView!
    
     
-    var detailItem: Information? {
+    var detailItem: Positions? {
         didSet {
             configureView()
         }
@@ -36,13 +36,22 @@ class ContactsViewController: UIViewController {
     func configureView() {
         if let entry = detailItem {
             if let label = nameLabel {
-                label.text = entry.nameView[1].views[2].viewInfoContacts[0].positions[0].officername
+                label.text = entry.officername
+            }
+            if let label = roleLabel{
+                label.text = entry.role
+            }
+            if let label = emailLabel {
+                label.text = entry.personEmail
+            }
+            if let textView = aboutLabel {
+                textView.text = entry.aboutOfficer ?? ""
+            }
+            if let imageView = mediaImage {
+                let url = URL(string: entry.officerPic ?? "")
+                let data = try? Data(contentsOf: url!)
+                imageView.image = UIImage(data: data!)
             }
         }
     }
-
-    
-    // MARK: - Navigation
-
-
 }
