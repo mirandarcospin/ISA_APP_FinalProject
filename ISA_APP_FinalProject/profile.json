@@ -1,0 +1,3 @@
+[
+    {"name":"Name", "email":"example@acu.edu", "college":"Abilene Christian University", "role":"Student,teacher,other", "gradYear":"Ex: May 2021", "birthday":"MM/DD/YYYY", "country": "Where are you from?", "insta":"Optional"}
+]

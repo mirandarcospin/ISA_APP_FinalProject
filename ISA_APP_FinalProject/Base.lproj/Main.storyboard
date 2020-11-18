@@ -216,33 +216,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBl-KY-gjj" userLabel="HeaderView">
                                 <rect key="frame" x="0.0" y="-33" width="414" height="150"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Profile" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFs-B7-mbr">
-                                        <rect key="frame" x="66" y="103" width="282" height="47"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="282" id="56Q-fw-2Oe"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="282" id="JPQ-T2-aaj"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="VNf-jd-SuD"/>
-                                            <constraint firstAttribute="height" constant="90" id="owi-ck-UuG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="29"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.89180485050000002" green="0.59967085870000003" blue="0.38909082750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="GFs-B7-mbr" firstAttribute="leading" secondItem="GBl-KY-gjj" secondAttribute="leading" constant="66" id="5Mp-SP-zcE"/>
-                                    <constraint firstAttribute="trailing" secondItem="GFs-B7-mbr" secondAttribute="trailing" constant="66" id="7Pb-VS-kQB"/>
-                                    <constraint firstAttribute="bottom" secondItem="GFs-B7-mbr" secondAttribute="bottom" id="7jE-6i-9uP"/>
-                                    <constraint firstAttribute="trailing" secondItem="GFs-B7-mbr" secondAttribute="trailing" constant="66" id="8aP-3R-L8k"/>
-                                    <constraint firstAttribute="bottom" secondItem="GFs-B7-mbr" secondAttribute="bottom" constant="8" id="9jt-jV-4C4"/>
-                                    <constraint firstItem="GFs-B7-mbr" firstAttribute="top" secondItem="GBl-KY-gjj" secondAttribute="top" constant="94" id="bQ9-Zp-iZq"/>
-                                    <constraint firstItem="GFs-B7-mbr" firstAttribute="top" secondItem="GBl-KY-gjj" secondAttribute="top" constant="52" id="bRL-yv-JrV"/>
-                                    <constraint firstItem="GFs-B7-mbr" firstAttribute="leading" secondItem="GBl-KY-gjj" secondAttribute="leading" constant="66" id="hXZ-eV-kGS"/>
-                                    <constraint firstAttribute="bottom" secondItem="GFs-B7-mbr" secondAttribute="bottom" constant="8" id="sCv-hp-bhp"/>
-                                    <constraint firstAttribute="trailing" secondItem="GFs-B7-mbr" secondAttribute="trailing" constant="66" id="wcQ-N4-fTE"/>
-                                </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Abilene Christian University" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eK-sw-8sX">
                                 <rect key="frame" x="150" y="394.5" width="222" height="37"/>
@@ -463,7 +437,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="CAh-7H-MeY"/>
                     <connections>
+                        <outlet property="birthdayLabel" destination="xzj-0n-LIl" id="E6O-hc-fVU"/>
+                        <outlet property="collegeLabel" destination="2eK-sw-8sX" id="QxL-Ay-LOF"/>
+                        <outlet property="countryLabel" destination="UE5-AX-671" id="x1K-Gh-eh1"/>
+                        <outlet property="emailLabel" destination="Ofa-Vb-Bim" id="Qqi-xn-cE2"/>
+                        <outlet property="gradYearLabel" destination="Dbj-gd-Xze" id="ozw-Sd-M7W"/>
+                        <outlet property="instaLabel" destination="B3L-rU-rmc" id="cdJ-JC-QRj"/>
+                        <outlet property="nameLabel" destination="KrI-dh-neR" id="MEb-JN-jWf"/>
                         <outlet property="profileImageView" destination="HuU-M4-gSw" id="NRP-NF-uoI"/>
+                        <outlet property="roleLabel" destination="Hq0-oW-yCO" id="6PI-3e-cSe"/>
                         <outlet property="tapToChangeProfileButton" destination="qlm-X6-xP0" id="hZI-Go-ChY"/>
                     </connections>
                 </viewController>
@@ -773,6 +755,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wi-6T-xGV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306" y="1280"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bn3-GX-Kzs">
+            <objects>
+                <navigationController id="Ne0-gb-Te4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7t0-Tm-GMU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qZ-FM-ZQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3965" y="610"/>
         </scene>
     </scenes>
     <resources>
