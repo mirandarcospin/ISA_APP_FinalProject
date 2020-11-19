@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4E63B425667853000AA348 /* UpEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E63B325667853000AA348 /* UpEventsViewController.swift */; };
 		EE50FFBB2564CCAA0075D0F5 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = EE50FFBA2564CCAA0075D0F5 /* profile.json */; };
 		EE50FFBE2564CE1D0075D0F5 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50FFBD2564CE1D0075D0F5 /* ProfileInfo.swift */; };
 		EE5677E4255E35D400495F0D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5677E3255E35D400495F0D /* DataController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE4E63B325667853000AA348 /* UpEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpEventsViewController.swift; sourceTree = "<group>"; };
 		EE50FFBA2564CCAA0075D0F5 /* profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
 		EE50FFBD2564CE1D0075D0F5 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
 		EE5677E3255E35D400495F0D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */,
 				EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */,
 				EE6A6E39255CFC75006526F9 /* ProfileViewController.swift */,
+				EE4E63B325667853000AA348 /* UpEventsViewController.swift */,
 				EE6A6E22255CF6A3006526F9 /* Main.storyboard */,
 				EE6A6E25255CF6A4006526F9 /* Assets.xcassets */,
 				EE6A6E27255CF6A4006526F9 /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */,
 				EE6A6E1F255CF6A3006526F9 /* SceneDelegate.swift in Sources */,
 				EE5677E4255E35D400495F0D /* DataController.swift in Sources */,
+				EE4E63B425667853000AA348 /* UpEventsViewController.swift in Sources */,
 				EE6A6E3A255CFC75006526F9 /* ProfileViewController.swift in Sources */,
 				EE6A6E36255CFBBF006526F9 /* HomeViewController.swift in Sources */,
 				EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */,

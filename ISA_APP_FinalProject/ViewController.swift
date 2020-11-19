@@ -1,18 +1,17 @@
 //
-//  NewsletterViewController.swift
+//  ViewController.swift
 //  ISA_APP_FinalProject
 //
-//  Created by Miranda Ramirez Cospin on 11/11/20.
+//  Created by Miranda Ramirez Cospin on 11/19/20.
 //
 
 import UIKit
 import WebKit
-import SafariServices
 
-class NewsletterViewController: UIViewController, WKUIDelegate {
-    
+class UpEventsViewController: UIViewController, WKUIDelegate {
+
     var webView: WKWebView!
-
+    
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -26,11 +25,9 @@ class NewsletterViewController: UIViewController, WKUIDelegate {
         title = "Newsletter"
         
         // Do any additional setup after loading the view.
-        let myURL = URL(string:"https://isaofacu.wixsite.com/website/upcoming-events")
+        let myURL = URL(string:"https://isaofacu.wixsite.com/website/events-1")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
-        
-        UIApplication.shared.canOpenURL(myURL!)
     }
 
 }

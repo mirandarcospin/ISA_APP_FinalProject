@@ -18,6 +18,7 @@ class ProfileViewController: UIViewController {
     let darkGreyColor = UIColor(red: 94/255, green: 94/255, blue: 94/255, alpha: 1.0)
     
     
+    
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var tapToChangeProfileButton: UIButton!
     
@@ -29,8 +30,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var birthdayLabel: UITextField!
     @IBOutlet weak var countryLabel: UITextField!
     @IBOutlet weak var instaLabel: UITextField!
-   // @IBOutlet var editButton: UIButton!
 
+
+    
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
@@ -38,6 +40,7 @@ class ProfileViewController: UIViewController {
         
         title = "Profile"
 
+        //FOR IMAGE IN PROFILE
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
         profileImageView.isUserInteractionEnabled = true
         profileImageView.addGestureRecognizer(imageTap)
@@ -49,24 +52,21 @@ class ProfileViewController: UIViewController {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
 //        imagePicker.delegate = self
+                
+        // GET DATA FOR TEXT LABELS, SAVE INFORMATION IN JSON, AND EDIT BUTTON
         getData()
-        
         setupTexts()
         setupEditButton()
     }
     
+    
+    
+//**************************************************************
+//                 FOR CHANGING PROFILE PICTURE                *
+//**************************************************************
+    
     @objc func openImagePicker(_ sender:Any){
         //open image picker
-    }
-    
-    func getData() {
-        do {
-            let documentDirectory = try fm.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-            subUrl = documentDirectory.appendingPathComponent("profile.json")
-            loadFile(mainPath: mainUrl!, subPath: subUrl!)
-        } catch {
-            print(error)
-        }
     }
     
     func loadFile(mainPath: URL, subPath: URL){
@@ -79,6 +79,22 @@ class ProfileViewController: UIViewController {
             
         }else{
             decodeData(pathName: mainPath)
+        }
+    }
+    
+    
+    
+//**************************************************************
+//     FOR TEXT LABELS. INFORMATION OF THE USER IS SAVED       *
+//**************************************************************
+    
+    func getData() {
+        do {
+            let documentDirectory = try fm.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            subUrl = documentDirectory.appendingPathComponent("profile.json")
+            loadFile(mainPath: mainUrl!, subPath: subUrl!)
+        } catch {
+            print(error)
         }
     }
     
@@ -245,7 +261,7 @@ class ProfileViewController: UIViewController {
             }
 
         } else {
-            let alert = UIAlertController(title: "Reminder:", message: "All fields are required. Insatgram is optional", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Reminder:", message: "Fields are required.\nInsatgram is optional", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
        }

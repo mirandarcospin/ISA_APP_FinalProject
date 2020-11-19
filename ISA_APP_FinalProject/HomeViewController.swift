@@ -13,9 +13,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        
+        title = "Home"
+        
+        let nav = self.navigationController?.navigationBar
+        nav?.tintColor = UIColor.white
+        
+        
     }
-
+    
     
     // MARK: - Navigation
 
