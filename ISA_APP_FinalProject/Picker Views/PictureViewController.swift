@@ -1,18 +1,18 @@
 //
-//  NewsletterViewController.swift
+//  PictureViewController.swift
 //  ISA_APP_FinalProject
 //
-//  Created by Miranda Ramirez Cospin on 11/11/20.
+//  Created by Miranda Ramirez Cospin on 11/20/20.
 //
 
 import UIKit
 import WebKit
-import SafariServices
 
-class NewsletterViewController: UIViewController, WKUIDelegate {
-    
+class PictureViewController: UIViewController, WKUIDelegate {
+
     var webView: WKWebView!
-
+    var homeBack: UINavigationItem!
+    
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -23,14 +23,12 @@ class NewsletterViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Newsletter"
+        title = "Pictures"
         
         // Do any additional setup after loading the view.
-        let myURL = URL(string:"https://isaofacu.wixsite.com/website/upcoming-events")
+        let myURL = URL(string:"https://isaofacu.wixsite.com/website/look-book")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
-        
-        UIApplication.shared.canOpenURL(myURL!)
     }
 
 }

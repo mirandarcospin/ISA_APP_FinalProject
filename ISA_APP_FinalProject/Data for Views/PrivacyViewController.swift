@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  PrivacyViewController.swift
 //  ISA_APP_FinalProject
 //
-//  Created by Miranda Ramirez Cospin on 11/19/20.
+//  Created by Miranda Ramirez Cospin on 11/20/20.
 //
 
 import UIKit
 import WebKit
 
-class UpEventsViewController: UIViewController, WKUIDelegate {
+class PrivacyViewController: UIViewController, WKUIDelegate {
 
     var webView: WKWebView!
     var homeBack: UINavigationItem!
@@ -23,12 +23,13 @@ class UpEventsViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Upcoming Events"
+        title = "Privacy"
         
         // Do any additional setup after loading the view.
-        let myURL = URL(string:"https://isaofacu.wixsite.com/website/events-1")
+        let myURL = URL(string:"https://www.involvio.com/legal/privacy")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
     }
+
 
 }

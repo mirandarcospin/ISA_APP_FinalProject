@@ -12,6 +12,7 @@
 		EE50FFBE2564CE1D0075D0F5 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50FFBD2564CE1D0075D0F5 /* ProfileInfo.swift */; };
 		EE5677E4255E35D400495F0D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5677E3255E35D400495F0D /* DataController.swift */; };
 		EE5677E7255E361400495F0D /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5677E6255E361400495F0D /* InfoData.swift */; };
+		EE6749ED256755C000A2ED2D /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6749EC256755C000A2ED2D /* PickerViewController.swift */; };
 		EE6A6E1D255CF6A3006526F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E1C255CF6A3006526F9 /* AppDelegate.swift */; };
 		EE6A6E1F255CF6A3006526F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E1E255CF6A3006526F9 /* SceneDelegate.swift */; };
 		EE6A6E24255CF6A3006526F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6A6E22255CF6A3006526F9 /* Main.storyboard */; };
@@ -23,6 +24,14 @@
 		EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */; };
 		EE6A6E44255D0F4C006526F9 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */; };
 		EE6A6E4B255D4595006526F9 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */; };
+		EEA82983256782C300E0255E /* ChapelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA82982256782C300E0255E /* ChapelViewController.swift */; };
+		EEA8298625679DAD00E0255E /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8298525679DAD00E0255E /* PictureViewController.swift */; };
+		EEA8298C2567A9C600E0255E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8298B2567A9C600E0255E /* SettingsViewController.swift */; };
+		EEA829902567AA4F00E0255E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8298F2567AA4F00E0255E /* PrivacyViewController.swift */; };
+		EEA829932567AA5C00E0255E /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829922567AA5C00E0255E /* TermsViewController.swift */; };
+		EEA829962567AE7300E0255E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829952567AE7300E0255E /* NotificationsViewController.swift */; };
+		EEA829A22567DA6B00E0255E /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829A12567DA6B00E0255E /* LocalNotificationManager.swift */; };
+		EEA829A52567E04700E0255E /* SettingsNotifPreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829A42567E04700E0255E /* SettingsNotifPreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,7 @@
 		EE50FFBD2564CE1D0075D0F5 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
 		EE5677E3255E35D400495F0D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		EE5677E6255E361400495F0D /* InfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
+		EE6749EC256755C000A2ED2D /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		EE6A6E19255CF6A3006526F9 /* ISA_APP_FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISA_APP_FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6A6E1C255CF6A3006526F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE6A6E1E255CF6A3006526F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +54,15 @@
 		EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
+		EEA82982256782C300E0255E /* ChapelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelViewController.swift; sourceTree = "<group>"; };
+		EEA8298525679DAD00E0255E /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		EEA8298B2567A9C600E0255E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EEA8298F2567AA4F00E0255E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		EEA829922567AA5C00E0255E /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		EEA829952567AE7300E0255E /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		EEA8299F2567D67C00E0255E /* ISA_APP_FinalProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ISA_APP_FinalProject.entitlements; sourceTree = "<group>"; };
+		EEA829A12567DA6B00E0255E /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		EEA829A42567E04700E0255E /* SettingsNotifPreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNotifPreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,25 +95,75 @@
 		EE6A6E1B255CF6A3006526F9 /* ISA_APP_FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				EEA8299F2567D67C00E0255E /* ISA_APP_FinalProject.entitlements */,
 				EE6A6E1C255CF6A3006526F9 /* AppDelegate.swift */,
 				EE6A6E1E255CF6A3006526F9 /* SceneDelegate.swift */,
+				EE6A6E22255CF6A3006526F9 /* Main.storyboard */,
+				EE6A6E27255CF6A4006526F9 /* LaunchScreen.storyboard */,
+				EEA8297525677DE100E0255E /* Tab Bar Views */,
+				EEA8297725677DFB00E0255E /* Table Views */,
+				EEA829892567A8F900E0255E /* Picker Views */,
+				EEA8297E25677F1600E0255E /* Data for Views */,
+				EEA8297A25677E2A00E0255E /* Resources */,
+				EE6A6E25255CF6A4006526F9 /* Assets.xcassets */,
+				EE6A6E2A255CF6A4006526F9 /* Info.plist */,
+			);
+			path = ISA_APP_FinalProject;
+			sourceTree = "<group>";
+		};
+		EEA8297525677DE100E0255E /* Tab Bar Views */ = {
+			isa = PBXGroup;
+			children = (
 				EE6A6E35255CFBBF006526F9 /* HomeViewController.swift */,
 				EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */,
 				EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */,
 				EE6A6E39255CFC75006526F9 /* ProfileViewController.swift */,
-				EE4E63B325667853000AA348 /* UpEventsViewController.swift */,
-				EE6A6E22255CF6A3006526F9 /* Main.storyboard */,
-				EE6A6E25255CF6A4006526F9 /* Assets.xcassets */,
-				EE6A6E27255CF6A4006526F9 /* LaunchScreen.storyboard */,
+			);
+			path = "Tab Bar Views";
+			sourceTree = "<group>";
+		};
+		EEA8297725677DFB00E0255E /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
 				EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */,
 				EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */,
-				EE6A6E2A255CF6A4006526F9 /* Info.plist */,
+			);
+			path = "Table Views";
+			sourceTree = "<group>";
+		};
+		EEA8297A25677E2A00E0255E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				EE5677E3255E35D400495F0D /* DataController.swift */,
 				EE5677E6255E361400495F0D /* InfoData.swift */,
 				EE50FFBA2564CCAA0075D0F5 /* profile.json */,
-				EE50FFBD2564CE1D0075D0F5 /* ProfileInfo.swift */,
 			);
-			path = ISA_APP_FinalProject;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EEA8297E25677F1600E0255E /* Data for Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEA829A12567DA6B00E0255E /* LocalNotificationManager.swift */,
+				EE6749EC256755C000A2ED2D /* PickerViewController.swift */,
+				EE50FFBD2564CE1D0075D0F5 /* ProfileInfo.swift */,
+				EEA8298F2567AA4F00E0255E /* PrivacyViewController.swift */,
+				EEA829922567AA5C00E0255E /* TermsViewController.swift */,
+				EEA829A42567E04700E0255E /* SettingsNotifPreViewController.swift */,
+			);
+			path = "Data for Views";
+			sourceTree = "<group>";
+		};
+		EEA829892567A8F900E0255E /* Picker Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEA82982256782C300E0255E /* ChapelViewController.swift */,
+				EE4E63B325667853000AA348 /* UpEventsViewController.swift */,
+				EEA8298525679DAD00E0255E /* PictureViewController.swift */,
+				EEA8298B2567A9C600E0255E /* SettingsViewController.swift */,
+				EEA829952567AE7300E0255E /* NotificationsViewController.swift */,
+			);
+			path = "Picker Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,16 +237,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA829962567AE7300E0255E /* NotificationsViewController.swift in Sources */,
 				EE6A6E4B255D4595006526F9 /* EmailTableViewController.swift in Sources */,
+				EEA829A22567DA6B00E0255E /* LocalNotificationManager.swift in Sources */,
+				EEA829A52567E04700E0255E /* SettingsNotifPreViewController.swift in Sources */,
+				EEA82983256782C300E0255E /* ChapelViewController.swift in Sources */,
 				EE50FFBE2564CE1D0075D0F5 /* ProfileInfo.swift in Sources */,
 				EE6A6E1D255CF6A3006526F9 /* AppDelegate.swift in Sources */,
+				EEA829932567AA5C00E0255E /* TermsViewController.swift in Sources */,
+				EEA8298625679DAD00E0255E /* PictureViewController.swift in Sources */,
+				EE6749ED256755C000A2ED2D /* PickerViewController.swift in Sources */,
 				EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */,
+				EEA8298C2567A9C600E0255E /* SettingsViewController.swift in Sources */,
 				EE6A6E1F255CF6A3006526F9 /* SceneDelegate.swift in Sources */,
 				EE5677E4255E35D400495F0D /* DataController.swift in Sources */,
 				EE4E63B425667853000AA348 /* UpEventsViewController.swift in Sources */,
 				EE6A6E3A255CFC75006526F9 /* ProfileViewController.swift in Sources */,
 				EE6A6E36255CFBBF006526F9 /* HomeViewController.swift in Sources */,
 				EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */,
+				EEA829902567AA4F00E0255E /* PrivacyViewController.swift in Sources */,
 				EE6A6E44255D0F4C006526F9 /* ListTableViewController.swift in Sources */,
 				EE5677E7255E361400495F0D /* InfoData.swift in Sources */,
 			);
@@ -326,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ISA_APP_FinalProject/ISA_APP_FinalProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ISA_APP_FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ISA_APP_FinalProject/ISA_APP_FinalProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ISA_APP_FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
