@@ -25,18 +25,9 @@ class ListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "listCellProfile", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath)
 
-        // Configure the cell...
-
-        // use the values in the array to make cast list cell pretty
-        //cell.textLabel?.text = listArray?[indexPath.row].profile
-        cell.textLabel?.text = listArray?[indexPath.row].profile
-//        cell.textLabel?.text = listArray?[indexPath.row].notifications
-//        cell.textLabel?.text = listArray?[indexPath.row].chapel
-//        cell.textLabel?.text = listArray?[indexPath.row].events
-//        cell.textLabel?.text = listArray?[indexPath.row].pictures
-//        cell.textLabel?.text = listArray?[indexPath.row].settings
+        cell.textLabel?.text = listArray?[indexPath.row].setName
 
         return cell
     }

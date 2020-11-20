@@ -17,9 +17,9 @@ class Information: Codable {
 }
 
 class Views: Codable {
-    let viewInfoYears: [InfoYears]
-    let viewInfoSettings: [InfoSettings]
-    let viewInfoContacts: [InfoContacts]
+    let viewInfoYears: [InfoYears]?
+    let viewInfoSettings: [InfoSettings]?
+    let viewInfoContacts: [InfoContacts]?
 }
 
 class InfoYears: Codable {
@@ -28,27 +28,32 @@ class InfoYears: Codable {
 }
 
 class InfoSettings: Codable {
-    let profile: String
-    let notifications: String
-    let chapel: String
-    let events: String
-    let pictures: String
-    let settings: String
+    let setName: String
+//    let profile: String
+//    let notifications: String
+//    let chapel: String
+//    let events: String
+//    let pictures: String
+//    let settings: String
 }
 
 class InfoContacts: Codable {
     let positionName: String
-    let positions: [Positions]
+    let positions: [Positions]?
+    let positionsSM: [PositionsSM]?
 }
 
 class Positions: Codable {
-    let officername: String
-    let role: String
-    let personEmail: String
+    let officername: String?
+    let role: String?
+    let personEmail: String?
     let officerPic: String?
     let aboutOfficer: String?
-    let isaEmail: String?
-    let instagram: String?
-    let facebook: String?
+}
+
+class PositionsSM: Codable {
+    let isaEmail: String
+    let instagram: String
+    let facebook: String
 }
 

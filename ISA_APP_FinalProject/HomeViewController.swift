@@ -19,7 +19,6 @@ class HomeViewController: UIViewController {
         let nav = self.navigationController?.navigationBar
         nav?.tintColor = UIColor.white
         
-        
     }
     
     
