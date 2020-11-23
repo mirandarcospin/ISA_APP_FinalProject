@@ -22,7 +22,6 @@
 		EE6A6E3A255CFC75006526F9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E39255CFC75006526F9 /* ProfileViewController.swift */; };
 		EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */; };
 		EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */; };
-		EE6A6E44255D0F4C006526F9 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */; };
 		EE6A6E4B255D4595006526F9 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */; };
 		EEA82983256782C300E0255E /* ChapelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA82982256782C300E0255E /* ChapelViewController.swift */; };
 		EEA8298625679DAD00E0255E /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8298525679DAD00E0255E /* PictureViewController.swift */; };
@@ -52,7 +51,6 @@
 		EE6A6E39255CFC75006526F9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterViewController.swift; sourceTree = "<group>"; };
 		EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
 		EEA82982256782C300E0255E /* ChapelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelViewController.swift; sourceTree = "<group>"; };
 		EEA8298525679DAD00E0255E /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 		EEA8297725677DFB00E0255E /* Table Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE6A6E43255D0F4C006526F9 /* ListTableViewController.swift */,
 				EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */,
 			);
 			path = "Table Views";
@@ -256,7 +253,6 @@
 				EE6A6E36255CFBBF006526F9 /* HomeViewController.swift in Sources */,
 				EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */,
 				EEA829902567AA4F00E0255E /* PrivacyViewController.swift in Sources */,
-				EE6A6E44255D0F4C006526F9 /* ListTableViewController.swift in Sources */,
 				EE5677E7255E361400495F0D /* InfoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

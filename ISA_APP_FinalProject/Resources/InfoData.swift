@@ -13,34 +13,25 @@ class InfoData: Codable {
 
 class Information: Codable {
     let nameView: String
-    let views: [Views]
+    let viewsYear: [viewsYearInfo]?
+    let viewsSocial: [viewsSocialInfo]?
+    let viewsContact: [viewsContactInfo]?
 }
 
-class Views: Codable {
-    let viewInfoYears: [InfoYears]?
-    let viewInfoSettings: [InfoSettings]?
-    let viewInfoContacts: [InfoContacts]?
+class viewsYearInfo: Codable {
+    let yearStart: String
+    let yearEnd: String
 }
 
-class InfoYears: Codable {
-    let yearStart: Int
-    let yearEnd: Int
+class viewsSocialInfo: Codable {
+    let isaEmail: String
+    let instagram: String
+    let facebook: String
 }
 
-class InfoSettings: Codable {
-    let setName: String
-//    let profile: String
-//    let notifications: String
-//    let chapel: String
-//    let events: String
-//    let pictures: String
-//    let settings: String
-}
-
-class InfoContacts: Codable {
+class viewsContactInfo: Codable {
     let positionName: String
-    let positions: [Positions]?
-    let positionsSM: [PositionsSM]?
+    let positions: [Positions]
 }
 
 class Positions: Codable {
@@ -51,9 +42,5 @@ class Positions: Codable {
     let aboutOfficer: String?
 }
 
-class PositionsSM: Codable {
-    let isaEmail: String
-    let instagram: String
-    let facebook: String
-}
+
 

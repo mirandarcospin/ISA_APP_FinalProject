@@ -9,11 +9,11 @@ import UIKit
 
 class ContactsViewController: UIViewController {
     
-    @IBOutlet var mediaImage: UIImageView!
+    @IBOutlet var mediaImage: UIImageView?
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var roleLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
-    @IBOutlet var aboutLabel: UITextView!
+    @IBOutlet var aboutLabel: UITextView?
    
     
     var detailItem: Positions? {
@@ -45,12 +45,16 @@ class ContactsViewController: UIViewController {
                 label.text = entry.personEmail
             }
             if let textView = aboutLabel {
-                textView.text = entry.aboutOfficer ?? ""
+                textView.text = entry.aboutOfficer ?? "Hello!!!"
             }
+//            if let imageView = mediaImage {
+//                let url = URL(string: entry.officerPic ?? "no-profile-picture-icon-22.jpg")
+//                let data = try? Data(contentsOf: url!)
+//                imageView.image = UIImage(data: data!)
+//            }
+            
             if let imageView = mediaImage {
-                let url = URL(string: entry.officerPic ?? "")
-                let data = try? Data(contentsOf: url!)
-                imageView.image = UIImage(data: data!)
+                imageView.image = UIImage(named: "")
             }
         }
     }

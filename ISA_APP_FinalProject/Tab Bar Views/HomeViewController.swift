@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var detailItem : Views?
+    //var detailItem : Views?
     //@IBOutlet var scrollView : UIScrollView!
     
     override func viewDidLoad() {
