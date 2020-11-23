@@ -47,15 +47,15 @@ class ContactsViewController: UIViewController {
             if let textView = aboutLabel {
                 textView.text = entry.aboutOfficer ?? "Hello!!!"
             }
-//            if let imageView = mediaImage {
-//                let url = URL(string: entry.officerPic ?? "no-profile-picture-icon-22.jpg")
-//                let data = try? Data(contentsOf: url!)
-//                imageView.image = UIImage(data: data!)
-//            }
-            
             if let imageView = mediaImage {
-                imageView.image = UIImage(named: "")
+                if entry.officerPic != nil {
+                    let url = URL(string: entry.officerPic ?? "noPicProfile.jpg")
+                    let data = try? Data(contentsOf: url!)
+                    imageView.image = UIImage(data: data!)
+                }
             }
+            
         }
     }
 }
+

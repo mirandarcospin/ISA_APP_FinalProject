@@ -41,7 +41,7 @@ class EmailTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mediaModel?.information[section].viewsContact?[section].positions.count ?? 0
+        return mediaModel?.information[section].viewsContact?[section].positionName.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -64,7 +64,7 @@ class EmailTableViewController: UITableViewController {
         
         if segue.identifier == "showEmails" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let selectedObject = mediaModel?.information[indexPath.section].viewsContact?[indexPath.row].positions[indexPath.row]
+                let selectedObject = mediaModel!.information[indexPath.section].viewsContact?[indexPath.row].positions[indexPath.row]
                 let controller = segue.destination as! ContactsViewController
                 controller.detailItem = selectedObject
             }
