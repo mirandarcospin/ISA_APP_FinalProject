@@ -1,15 +1,15 @@
 //
-//  NewsletterViewController.swift
+//  SocialViewController.swift
 //  ISA_APP_FinalProject
 //
-//  Created by Miranda Ramirez Cospin on 11/11/20.
+//  Created by Miranda Ramirez Cospin on 11/23/20.
 //
 
 import UIKit
 import WebKit
 
-class NewsletterViewController: UIViewController, WKUIDelegate {
-    
+class SocialViewController: UIViewController, WKUIDelegate {
+
     var webView: WKWebView!
     var backButton: UIBarButtonItem?
     var forwardButton: UIBarButtonItem?
@@ -24,10 +24,10 @@ class NewsletterViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Newsletter"
+        title = "Social Media"
         
-        // Do any additional setup after loading the view.
-        let myURL = URL(string:"https://isaofacu.wixsite.com/website/upcoming-events")
+        
+        let myURL = URL(string:"https://isaofacu.wixsite.com/website/social-media")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
         
@@ -43,5 +43,5 @@ class NewsletterViewController: UIViewController, WKUIDelegate {
         self.backButton?.isEnabled = self.webView.canGoBack
         self.forwardButton?.isEnabled = self.webView.canGoForward
     }
-    
+
 }

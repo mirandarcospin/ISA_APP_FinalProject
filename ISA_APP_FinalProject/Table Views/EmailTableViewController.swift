@@ -9,24 +9,18 @@ import UIKit
 
 class EmailTableViewController: UITableViewController {
     
-    
     var mediaModel: InfoData? {
         didSet {
             tableView.reloadData()
         }
     }
-
-    var dataController = DataController()
     
+    var dataController = DataController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Emails"
         
-        let nav = self.navigationController?.navigationBar
-
-        nav?.barStyle = UIBarStyle.black
+        title = "Emails"
         
         dataController.getJSONData(completion: { dataModel in
             self.mediaModel = dataModel
@@ -34,41 +28,31 @@ class EmailTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return mediaModel?.information[0].viewsContact?.count ?? 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mediaModel?.information[section].viewsContact?[section].positionName.count ?? 0
+        // #warning Incomplete implementation, return the number of rows
+        return mediaModel?.information.count ?? 0
     }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return mediaModel?.information[section].viewsContact?[section].positionName
-    }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mediaCell", for: indexPath)
-        
-        // Configure the cell...
-        cell.textLabel?.text = mediaModel?.information[indexPath.row].viewsContact?[indexPath.section].positions[indexPath.section].officername
-        cell.detailTextLabel?.text = mediaModel?.information[indexPath.row].viewsContact?[indexPath.section].positions[indexPath.section].personEmail
+
+        cell.textLabel?.text = mediaModel?.information[indexPath.row].positions[indexPath.row].officername
         
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "showEmails" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let selectedObject = mediaModel!.information[indexPath.section].viewsContact?[indexPath.row].positions[indexPath.row]
-                let controller = segue.destination as! ContactsViewController
-                controller.detailItem = selectedObject
+            // Get the new view controller using segue.destination.
+            // Pass the selected object to the new view controller.
+            if segue.identifier == "showData" {
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    let selectedObject = mediaModel!.information[indexPath.section].positions[indexPath.row]
+                    let controller = segue.destination as! ContactsViewController
+                    controller.detailItem = selectedObject
             }
         }
     }
     
 }
+
+

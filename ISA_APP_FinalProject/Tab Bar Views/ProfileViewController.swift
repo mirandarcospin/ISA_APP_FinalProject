@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     var profileData: [Profile] = []
     var fm = FileManager.default
@@ -51,14 +51,14 @@ class ProfileViewController: UIViewController {
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
-//        imagePicker.delegate = self
-                
+        imagePicker.delegate = self
+        
+        
         // GET DATA FOR TEXT LABELS, SAVE INFORMATION IN JSON, AND EDIT BUTTON
         getData()
         setupTexts()
         setupEditButton()
     }
-    
     
     
 //**************************************************************
@@ -67,7 +67,14 @@ class ProfileViewController: UIViewController {
     
     @objc func openImagePicker(_ sender:Any){
         //open image picker
+        self.present(imagePicker, animated: true, completion: nil)
     }
+   
+    //Plus the extension that is at the end of then file
+    
+//**************************************************************
+//     FOR TEXT LABELS. INFORMATION OF THE USER IS SAVED       *
+//**************************************************************
     
     func loadFile(mainPath: URL, subPath: URL){
         if fm.fileExists(atPath: subPath.path){
@@ -81,12 +88,6 @@ class ProfileViewController: UIViewController {
             decodeData(pathName: mainPath)
         }
     }
-    
-    
-    
-//**************************************************************
-//     FOR TEXT LABELS. INFORMATION OF THE USER IS SAVED       *
-//**************************************************************
     
     func getData() {
         do {
@@ -267,4 +268,18 @@ class ProfileViewController: UIViewController {
        }
     }
 
+}
+
+extension ProfileViewController {
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+    internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            self.profileImageView.image = pickedImage
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
 }

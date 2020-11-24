@@ -21,16 +21,18 @@
 		EE6A6E36255CFBBF006526F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E35255CFBBF006526F9 /* HomeViewController.swift */; };
 		EE6A6E3A255CFC75006526F9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E39255CFC75006526F9 /* ProfileViewController.swift */; };
 		EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */; };
-		EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */; };
 		EE6A6E4B255D4595006526F9 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */; };
 		EEA82983256782C300E0255E /* ChapelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA82982256782C300E0255E /* ChapelViewController.swift */; };
 		EEA8298625679DAD00E0255E /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8298525679DAD00E0255E /* PictureViewController.swift */; };
 		EEA8298C2567A9C600E0255E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8298B2567A9C600E0255E /* SettingsViewController.swift */; };
 		EEA829902567AA4F00E0255E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8298F2567AA4F00E0255E /* PrivacyViewController.swift */; };
 		EEA829932567AA5C00E0255E /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829922567AA5C00E0255E /* TermsViewController.swift */; };
-		EEA829962567AE7300E0255E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829952567AE7300E0255E /* NotificationsViewController.swift */; };
+		EEA829962567AE7300E0255E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829952567AE7300E0255E /* CalendarViewController.swift */; };
 		EEA829A22567DA6B00E0255E /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829A12567DA6B00E0255E /* LocalNotificationManager.swift */; };
 		EEA829A52567E04700E0255E /* SettingsNotifPreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA829A42567E04700E0255E /* SettingsNotifPreViewController.swift */; };
+		EECEB0E0256CC163002791DF /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEB0DF256CC163002791DF /* ContactsViewController.swift */; };
+		EECEB0E3256CD3D9002791DF /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEB0E2256CD3D9002791DF /* SocialViewController.swift */; };
+		EECEB0E6256CE263002791DF /* OfficersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEB0E5256CE263002791DF /* OfficersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,17 +52,19 @@
 		EE6A6E35255CFBBF006526F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE6A6E39255CFC75006526F9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterViewController.swift; sourceTree = "<group>"; };
-		EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		EE6A6E4A255D4595006526F9 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
 		EEA82982256782C300E0255E /* ChapelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelViewController.swift; sourceTree = "<group>"; };
 		EEA8298525679DAD00E0255E /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		EEA8298B2567A9C600E0255E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EEA8298F2567AA4F00E0255E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		EEA829922567AA5C00E0255E /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
-		EEA829952567AE7300E0255E /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		EEA829952567AE7300E0255E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		EEA8299F2567D67C00E0255E /* ISA_APP_FinalProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ISA_APP_FinalProject.entitlements; sourceTree = "<group>"; };
 		EEA829A12567DA6B00E0255E /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		EEA829A42567E04700E0255E /* SettingsNotifPreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNotifPreViewController.swift; sourceTree = "<group>"; };
+		EECEB0DF256CC163002791DF /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		EECEB0E2256CD3D9002791DF /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		EECEB0E5256CE263002791DF /* OfficersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +118,9 @@
 			children = (
 				EE6A6E35255CFBBF006526F9 /* HomeViewController.swift */,
 				EE6A6E3C255CFC8C006526F9 /* NewsletterViewController.swift */,
-				EE6A6E3F255CFCAF006526F9 /* ContactsViewController.swift */,
+				EECEB0E2256CD3D9002791DF /* SocialViewController.swift */,
 				EE6A6E39255CFC75006526F9 /* ProfileViewController.swift */,
+				EECEB0DF256CC163002791DF /* ContactsViewController.swift */,
 			);
 			path = "Tab Bar Views";
 			sourceTree = "<group>";
@@ -158,7 +163,8 @@
 				EE4E63B325667853000AA348 /* UpEventsViewController.swift */,
 				EEA8298525679DAD00E0255E /* PictureViewController.swift */,
 				EEA8298B2567A9C600E0255E /* SettingsViewController.swift */,
-				EEA829952567AE7300E0255E /* NotificationsViewController.swift */,
+				EEA829952567AE7300E0255E /* CalendarViewController.swift */,
+				EECEB0E5256CE263002791DF /* OfficersViewController.swift */,
 			);
 			path = "Picker Views";
 			sourceTree = "<group>";
@@ -234,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA829962567AE7300E0255E /* NotificationsViewController.swift in Sources */,
+				EEA829962567AE7300E0255E /* CalendarViewController.swift in Sources */,
 				EE6A6E4B255D4595006526F9 /* EmailTableViewController.swift in Sources */,
 				EEA829A22567DA6B00E0255E /* LocalNotificationManager.swift in Sources */,
 				EEA829A52567E04700E0255E /* SettingsNotifPreViewController.swift in Sources */,
@@ -243,6 +249,8 @@
 				EE6A6E1D255CF6A3006526F9 /* AppDelegate.swift in Sources */,
 				EEA829932567AA5C00E0255E /* TermsViewController.swift in Sources */,
 				EEA8298625679DAD00E0255E /* PictureViewController.swift in Sources */,
+				EECEB0E3256CD3D9002791DF /* SocialViewController.swift in Sources */,
+				EECEB0E0256CC163002791DF /* ContactsViewController.swift in Sources */,
 				EE6749ED256755C000A2ED2D /* PickerViewController.swift in Sources */,
 				EE6A6E3D255CFC8C006526F9 /* NewsletterViewController.swift in Sources */,
 				EEA8298C2567A9C600E0255E /* SettingsViewController.swift in Sources */,
@@ -251,7 +259,7 @@
 				EE4E63B425667853000AA348 /* UpEventsViewController.swift in Sources */,
 				EE6A6E3A255CFC75006526F9 /* ProfileViewController.swift in Sources */,
 				EE6A6E36255CFBBF006526F9 /* HomeViewController.swift in Sources */,
-				EE6A6E40255CFCAF006526F9 /* ContactsViewController.swift in Sources */,
+				EECEB0E6256CE263002791DF /* OfficersViewController.swift in Sources */,
 				EEA829902567AA4F00E0255E /* PrivacyViewController.swift in Sources */,
 				EE5677E7255E361400495F0D /* InfoData.swift in Sources */,
 			);

@@ -12,24 +12,6 @@ class InfoData: Codable {
 }
 
 class Information: Codable {
-    let nameView: String
-    let viewsYear: [viewsYearInfo]?
-    let viewsSocial: [viewsSocialInfo]?
-    let viewsContact: [viewsContactInfo]?
-}
-
-class viewsYearInfo: Codable {
-    let yearStart: String
-    let yearEnd: String
-}
-
-class viewsSocialInfo: Codable {
-    let isaEmail: String
-    let instagram: String
-    let facebook: String
-}
-
-class viewsContactInfo: Codable {
     let positionName: String
     let positions: [Positions]
 }

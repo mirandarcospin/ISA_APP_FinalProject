@@ -23,7 +23,7 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.picker.delegate = self
         self.picker.dataSource = self
         
-        pickerData = ["None", "Chapel", "Events", "Pictures", "Notifications", "Settings"]
+        pickerData = ["None", "ISA Officers", "Chapel", "Events", "Pictures", "Calendar", "Settings"]
         
     }
     
@@ -56,29 +56,34 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        if row == 1 { //Chapel
-            let p1 = storyboard?.instantiateViewController(identifier: "ChapelView") as! ChapelViewController
+        if row == 1 { //ISA Officers
+            let p1 = storyboard?.instantiateViewController(identifier: "OfficersView") as! OfficersViewController
             present(p1, animated: true, completion: nil)
             
         }
-        else if row == 2 { //Events
-            let p2 = storyboard?.instantiateViewController(identifier: "UPEventsView") as! UpEventsViewController
+        else if row == 2 { //Chapel
+            let p2 = storyboard?.instantiateViewController(identifier: "ChapelView") as! ChapelViewController
             present(p2, animated: true, completion: nil)
             
         }
-        else if row == 3 { //Pictures
-            let p3 = storyboard?.instantiateViewController(identifier: "PictureView") as! PictureViewController
+        else if row == 3 { //Events
+            let p3 = storyboard?.instantiateViewController(identifier: "UPEventsView") as! UpEventsViewController
             present(p3, animated: true, completion: nil)
             
         }
-        else if row == 4 { //Notifications
-            let p4 = storyboard?.instantiateViewController(identifier: "NotificationsView") as! NotificationsViewController
+        else if row == 4 { //Pictures
+            let p4 = storyboard?.instantiateViewController(identifier: "PictureView") as! PictureViewController
             present(p4, animated: true, completion: nil)
             
         }
-        else if row == 5 { //Settings
-            let p5 = storyboard?.instantiateViewController(identifier: "SettingsView") as! SettingsViewController
+        else if row == 5 { //Notifications
+            let p5 = storyboard?.instantiateViewController(identifier: "CalendarView") as! CalendarViewController
             present(p5, animated: true, completion: nil)
+            
+        }
+        else if row == 6 { //Settings
+            let p6 = storyboard?.instantiateViewController(identifier: "SettingsView") as! SettingsViewController
+            present(p6, animated: true, completion: nil)
         }
         
     }
