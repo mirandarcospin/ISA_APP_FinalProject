@@ -667,13 +667,13 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZK-Zf-wl5">
                                 <rect key="frame" x="347" y="209" width="51" height="31"/>
                                 <connections>
-                                    <action selector="switchTapped:" destination="TWW-kT-dtb" eventType="valueChanged" id="bWa-vJ-HLE"/>
+                                    <action selector="switchChapelTapped:" destination="TWW-kT-dtb" eventType="valueChanged" id="5cY-wZ-9zZ"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beV-Lo-gdR">
                                 <rect key="frame" x="347" y="275" width="51" height="31"/>
                                 <connections>
-                                    <action selector="switchTapped:" destination="TWW-kT-dtb" eventType="valueChanged" id="GyG-Iq-DV5"/>
+                                    <action selector="switchEventsTapped:" destination="TWW-kT-dtb" eventType="valueChanged" id="fQe-12-6Cz"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yH-7M-XZD">
@@ -685,7 +685,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sH9-ry-RPC">
                                 <rect key="frame" x="347" y="339" width="51" height="31"/>
                                 <connections>
-                                    <action selector="switchTapped:" destination="TWW-kT-dtb" eventType="valueChanged" id="MrL-L9-put"/>
+                                    <action selector="switchNewsLetterTapped:" destination="TWW-kT-dtb" eventType="valueChanged" id="89m-HH-FSO"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter weekly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aj4-oy-ROg">
@@ -724,9 +724,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="zEA-ro-IPb"/>
                     <connections>
-                        <outlet property="switchChapel" destination="BZK-Zf-wl5" id="6S4-dH-Xpi"/>
-                        <outlet property="switchNLUpdate" destination="sH9-ry-RPC" id="o9n-2u-z19"/>
-                        <outlet property="switchUpEvents" destination="beV-Lo-gdR" id="LfE-Tn-VIM"/>
+                        <outlet property="switchChapel" destination="BZK-Zf-wl5" id="I89-vc-ny5"/>
+                        <outlet property="switchNLUpdate" destination="sH9-ry-RPC" id="OMt-AP-qD8"/>
+                        <outlet property="switchUpEvents" destination="beV-Lo-gdR" id="ODO-Y5-Kcm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOw-4j-U63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

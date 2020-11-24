@@ -15,8 +15,16 @@ class SettingsNotifPreViewController: UIViewController {
     @IBOutlet weak var switchUpEvents : UISwitch!
     @IBOutlet weak var switchNLUpdate : UISwitch!
     
-    @IBAction func switchTapped(_ sender:UISwitch!) {
-        userDefaults.set(sender.isOn, forKey: "switchValue")
+    @IBAction func switchChapelTapped(_ sender:UISwitch!) {
+        userDefaults.set(sender.isOn, forKey: "switchValueChapel")
+    }
+    
+    @IBAction func switchEventsTapped(_ sender:UISwitch!) {
+        userDefaults.set(sender.isOn, forKey: "switchValueEvents")
+    }
+    
+    @IBAction func switchNewsLetterTapped(_ sender:UISwitch!) {
+        userDefaults.set(sender.isOn, forKey: "switchValueNewsletter")
     }
 
     
@@ -24,22 +32,30 @@ class SettingsNotifPreViewController: UIViewController {
         super.viewDidLoad()
 
     
-        if (userDefaults.bool(forKey: "switchValue")) {
+        if (userDefaults.bool(forKey: "switchValueChapel")) {
             switchChapel.isOn = true
-            switchUpEvents.isOn = true
-            switchNLUpdate.isOn = true
         } else {
             switchChapel.isOn = false
+        }
+        
+        if (userDefaults.bool(forKey: "switchValueEvents")) {
+            switchUpEvents.isOn = true
+        } else {
             switchUpEvents.isOn = false
+        }
+        
+        if (userDefaults.bool(forKey: "switchValueNewsletter")) {
+            switchNLUpdate.isOn = true
+        } else {
             switchNLUpdate.isOn = false
         }
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        switchChapel.isOn = userDefaults.bool(forKey: "switchValue")
-        switchUpEvents.isOn = userDefaults.bool(forKey: "switchValue")
-        switchNLUpdate.isOn = userDefaults.bool(forKey: "switchValue")
+        switchChapel.isOn = userDefaults.bool(forKey: "switchValueChapel")
+        switchUpEvents.isOn = userDefaults.bool(forKey: "switchValueEvents")
+        switchNLUpdate.isOn = userDefaults.bool(forKey: "switchValueNewsletter")
     }
 
 

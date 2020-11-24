@@ -17,8 +17,8 @@ class HomeViewController: UIViewController {
         
         title = "Home"
         
-//        let nav = self.navigationController?.navigationBar
-//        nav?.tintColor = UIColor.white
+        let nav = self.navigationController?.navigationBar
+        nav?.tintColor = UIColor.white
         
     }
     
