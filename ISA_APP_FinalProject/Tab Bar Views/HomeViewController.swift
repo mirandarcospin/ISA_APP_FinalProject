@@ -9,13 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    //var detailItem : Views?
-    //@IBOutlet var scrollView : UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad() 
         
         title = "Home"
+        
         
         let nav = self.navigationController?.navigationBar
         nav?.tintColor = UIColor.white

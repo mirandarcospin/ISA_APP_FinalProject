@@ -16,8 +16,10 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     var subUrl: URL?
     var mainUrl: URL? = Bundle.main.url(forResource: "profile", withExtension: "json")
     let darkGreyColor = UIColor(red: 94/255, green: 94/255, blue: 94/255, alpha: 1.0)
+    var imagePres: UIImage!
+    var count = 0
     
-    
+    @IBOutlet var scrollView: UIScrollView!
     
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var tapToChangeProfileButton: UIButton!
@@ -39,6 +41,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         super.viewDidLoad()
         
         title = "Profile"
+        
+        scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: 800)
 
         //FOR IMAGE IN PROFILE
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
@@ -53,6 +57,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
         
+        //To save the picture that the user choose
+        if (UserDefaults.standard.object(forKey: "test") as? NSData) != nil {
+            let photo = UserDefaults.standard.object(forKey: "test") as! NSData
+            profileImageView.image = UIImage(data: photo as Data)
+        }
         
         // GET DATA FOR TEXT LABELS, SAVE INFORMATION IN JSON, AND EDIT BUTTON
         getData()
@@ -69,7 +78,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         //open image picker
         self.present(imagePicker, animated: true, completion: nil)
     }
-   
+    
     //Plus the extension that is at the end of then file
     
 //**************************************************************
@@ -270,6 +279,10 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
 
 }
 
+//**************************************************************
+//                 FOR CHOOSING PROFILE PICTURE                *
+//**************************************************************
+
 extension ProfileViewController {
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -277,9 +290,12 @@ extension ProfileViewController {
     }
 
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
-            self.profileImageView.image = pickedImage
-        }
-        picker.dismiss(animated: true, completion: nil)
+            let defaults = UserDefaults.standard
+            let image = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
+
+            self.profileImageView.image = image
+            let saveImage = image.pngData() as NSData?
+            defaults.set(saveImage, forKey: "test")  // saving image into userdefault
+            picker.dismiss(animated: true, completion: nil)
     }
 }

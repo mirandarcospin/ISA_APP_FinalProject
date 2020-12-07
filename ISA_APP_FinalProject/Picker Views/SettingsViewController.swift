@@ -9,36 +9,36 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
-    let userDefaults = UserDefaults.standard
-
-    var firstTimeAppLaunch: Bool {
-        get {
-            return userDefaults.bool(forKey: "firstTimeAppLaunch")
-        }
-        set {}
-    }
-
-    @IBOutlet weak var switchContactMe : UISwitch!
-    
-    
-    @IBAction func switchTapped(_ sender:UISwitch!) {
-        userDefaults.set(sender.isOn, forKey: "switchValue")
-    }
-
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        if !firstTimeAppLaunch {
-            // This will only be trigger first time the application is launched.
-            userDefaults.set(true, forKey: "firstTimeAppLaunch")
-            userDefaults.set(true, forKey: "switchValue")
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        switchContactMe.isOn = userDefaults.bool(forKey: "switchValue")
-    }
+//    let userDefaults = UserDefaults.standard
+//
+//    var firstTimeAppLaunch: Bool {
+//        get {
+//            return userDefaults.bool(forKey: "firstTimeAppLaunch")
+//        }
+//        set {}
+//    }
+//
+//    @IBOutlet weak var switchContactMe : UISwitch!
+//    
+//    
+//    @IBAction func switchTapped(_ sender:UISwitch!) {
+//        userDefaults.set(sender.isOn, forKey: "switchValue")
+//    }
+//
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        if !firstTimeAppLaunch {
+//            // This will only be trigger first time the application is launched.
+//            userDefaults.set(true, forKey: "firstTimeAppLaunch")
+//            userDefaults.set(true, forKey: "switchValue")
+//        }
+//    }
+//    
+//    override func viewDidAppear(_ animated: Bool) {
+//        switchContactMe.isOn = userDefaults.bool(forKey: "switchValue")
+//    }
 
 
     /*
